@@ -1,0 +1,58 @@
+/* Estilo general básico */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Títulos */
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Imagen */
+img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Listas */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Tabla simple */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    text-align: center;
+}

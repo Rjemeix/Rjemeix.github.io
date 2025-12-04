@@ -7,16 +7,13 @@ body {
 }
 
 h1 {
-
     border-bottom: 5px solid black;
     text-align: center;
 }
 
 img {
-  
     border: black 5px solid;
     margin-right: 60px;
-
 }
 
 ul {
@@ -47,7 +44,6 @@ p {
 }
 
 #text p {
-  
     border: black 5px solid;
     box-shadow: 10px 5px 5px rgb(0, 0, 0);
     text-indent: 40px;
@@ -87,7 +83,6 @@ p {
 
 #footer{
     border-top: 5px solid red;
-    
 }
 
 #footer a{

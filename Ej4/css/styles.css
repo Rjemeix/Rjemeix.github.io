@@ -1,18 +1,23 @@
 
-    /*colores:*/
-    /* fondo: #333333;*/
-    /*fondo: cajas: #424242;*/
-    /*linea: lightgray;*/
-    /* boton: #007BFF;*/
-    /* boton seleccionado: #0056b3;*/
+ /*
+    CSS para el examen
 
+    colores:
 
+    fondo: #333333;
+    fondo: cajas: #424242;
+    linea: lightgray;
+    boton: #007BFF;
+    boton seleccionado: #0056b3;
+*/
 
 body {
-    background: #a5f09e;
+    /* 1- color de fondo */
+    background-color: #333333;
+    /* 2- ancho 90% */
     width: 90%;
+    /* 3- centrar */
     margin: 0 auto;
-    text-align: center;
 }
 
 .container {
@@ -21,37 +26,33 @@ body {
 
 .youtuber, .footer, .header {
     /* 4- color de fondo */
-    background-color: aliceblue;
+    background-color: #424242;
     border: 1px solid lightgray;
     /* 5- redondear el borde */
-    border-radius: 20px;
+    border-radius: 10px;
     /* 6- sombra */
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     margin: 10px auto;
     padding: 20px;
     text-align: center;    
 }
+
 .footer {
     padding: 0px;
     color: white;
 }
 
-.imageHome{
-    border:black 4px solid;
+.imageHome {
+    border: black 4px solid;
     border-radius: 3%;
     /* 7- tamanyo */
-    width: 300px;
-    height: 200px;
-    /* Se utiliza en imágenes y videos 
-    para asegurarse de que siempre llenen 
-    completamente el contenedor, manteniendo
-    su relación de aspecto*/
+    width: 100%;
+    height: 300px;
     object-fit: cover; 
 }
 
 .youtuber .images {
-
-    /* 8- redondear la imagen*/
+    /* 8- redondear la imagen */
     border-radius: 50%;
     width: 150px;
     height: 150px;    
@@ -70,13 +71,14 @@ body {
 }
 
 #menu {
+    /* 9- quita los puntos */
     list-style: none;
-    margin: 0;
     padding: 0;
 }
 
 li {
-     display: inline-block;
+    /* 10- haz que los li no sean de tipo bloque */
+    display: inline;
     /* 11- borde izquierdo rojo */
     border-left: 4px red solid;
     /* 12- separa el borde de la izquierda */
@@ -85,15 +87,16 @@ li {
 }
 
 #menu a {
-    color: rgb(0, 47, 255);
+    /* 13- enlaces blancos */
+    color: white;
+    /* 14- sin subrayado */
     text-decoration: none;
 }
 
 #menu a:hover {
+    /* 15- cambia el color al subrayado */
     text-decoration: underline;
-    color: #b10909;
 }
-
 
 .button {
     padding: 10px 20px;
@@ -105,19 +108,23 @@ li {
     text-align: center;
     transition: background-color 0.3s ease;
 }
+
 .button:hover {
-    
+    /* 16- cambia el color al boton */
     background-color: #0056b3;
 }
 
 @media all and (max-width: 700px) {
     .youtuber, .footer {
-         border-color: lightgray;
+        /* 17- cambia el color al BORDE */
+        border-color: red;
     }
-    .button {      
-        background-color: #0056b3;
+    .button {
+        /* 18- cambia el color al boton */        
+        background-color: green;
     }
     .button:hover {
-        background-color: #007BFF;
+        /* 19- cambia el color al boton */
+        background-color: darkgreen;
     }    
 }

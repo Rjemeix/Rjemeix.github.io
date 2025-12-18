@@ -24,7 +24,9 @@ body {
     background-color: aliceblue;
     border: 1px solid lightgray;
     /* 5- redondear el borde */
+    border-radius: 20px;
     /* 6- sombra */
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
     margin: 10px auto;
     padding: 20px;
     text-align: center;    
@@ -38,6 +40,8 @@ body {
     border:black 4px solid;
     border-radius: 3%;
     /* 7- tamanyo */
+    width: 300px;
+    height: 200px;
     /* Se utiliza en imágenes y videos 
     para asegurarse de que siempre llenen 
     completamente el contenedor, manteniendo
@@ -48,6 +52,7 @@ body {
 .youtuber .images {
 
     /* 8- redondear la imagen*/
+    border-radius: 50%;
     width: 150px;
     height: 150px;    
     object-fit: cover; 
@@ -71,7 +76,6 @@ body {
 }
 
 li {
-    /* 10- haz que los li no sean de tipo bloque */
      display: inline-block;
     /* 11- borde izquierdo rojo */
     border-left: 4px red solid;
@@ -87,7 +91,7 @@ li {
 
 #menu a:hover {
     text-decoration: underline;
-    color: #f0f0f0;
+    color: #b10909;
 }
 
 
@@ -99,8 +103,6 @@ li {
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
-    /* animacion en css, para cambiar el color del boton, no visto en clase 
-    pero yo te lo regalo ;) */
     transition: background-color 0.3s ease;
 }
 .button:hover {
@@ -110,15 +112,12 @@ li {
 
 @media all and (max-width: 700px) {
     .youtuber, .footer {
-        /* 17- cambia el color al BORDE*/
          border-color: lightgray;
     }
-    .button {
-        /* 18- cambia el color al boton*/        
+    .button {      
         background-color: #0056b3;
     }
     .button:hover {
-        /* 19- cambia el color al boton*/
         background-color: #007BFF;
     }    
 }
